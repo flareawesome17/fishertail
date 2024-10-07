@@ -1,0 +1,97 @@
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay */
+}
+
+.modal-sms {
+    background: #fff; /* White background */
+    max-height: 70vh; /* Set a maximum height for the modal */
+    width: 60%;
+    overflow-y: auto;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 100px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.modal-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.device-selection {
+    margin-bottom: 20px;
+}
+
+.device-label {
+    font-weight: bold;
+}
+
+.device-dropdown {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.location-info {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.location-history-item {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    border-bottom: #333 1px solid;
+}
+
+.location-header {
+    margin-bottom: 10px;
+}
+
+.location-data {
+    font-weight: bold;
+    color: #007bff; /* Bootstrap primary color */
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.send-sms-button,
+.close-modal-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 48%; /* Adjust width to fit buttons side by side */
+}
+
+.send-sms-button {
+    background-color: #28a745; /* Green for send */
+    color: white;
+}
+
+.send-sms-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.close-modal-button {
+    background-color: #dc3545; /* Red for close */
+    color: white;
+}
+
+.close-modal-button:hover {
+    background-color: #c82333; /* Darker red on hover */
+}

@@ -1,0 +1,40 @@
+.settings-container {
+    display: flex;
+  }
+  
+  .settings-sidebar {
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+  }
+  
+  .settings-sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .settings-sidebar ul li {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .settings-sidebar ul li.active {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .settings-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .close-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  

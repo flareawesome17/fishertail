@@ -1,0 +1,115 @@
+/* Header */
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #282c34;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  .header .logo {
+    width: 50px; /* Adjust the size as needed */
+    height: 50px; /* Ensure height is the same as width to maintain the round shape */
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin-right: 10px;
+  }
+  
+  .header .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .search-button {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    margin-left: 50px;
+    cursor: pointer;
+    margin-right: 100px;
+    color: aliceblue;
+  }
+  .search-button:hover {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-right: 100px;
+    color: rgb(76, 78, 80);
+  }
+  
+  .search-icon {
+    margin-right: 5px;
+  }
+  
+  .search-button span {
+    font-size: 16px;
+  }
+
+  .search-container {
+    position: absolute;
+    top: 100px;
+    right: 500px;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 690px;
+    z-index: 100000;
+  }
+  
+  .search-input {
+    width: 95%;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .search-input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .error-message {
+    color: #ff4d4d;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .search-results {
+    margin-top: 15px;
+    list-style: none;
+    padding: 0;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  .search-result-item {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-bottom: 1px solid #eaeaea;
+  }
+  
+  .search-result-item:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .search-result-item:last-child {
+    border-bottom: none;
+  }
+  
