@@ -15,7 +15,7 @@ const EmergencySms = ({ isOpen, onRequestClose }) => {
     const [currentLocation, setCurrentLocation] = useState(null);
     const [locationHistory, setLocationHistory] = useState([]);
 
-    const phone = '+639073192870'; // Coast Guard Sample Number
+    const phone = '+639606849276'; // Coast Guard Sample Number
 
     // Fetch devices from Firebase
     useEffect(() => {
@@ -131,7 +131,7 @@ const EmergencySms = ({ isOpen, onRequestClose }) => {
         console.log("SMS Message Body:", message);
     
         try {
-            const response = await axios.post('http://localhost/php/index.php', {
+            const response = await axios.post('http://fishertail-sms-server.42web.io/index.php', {
                 phone: phone,
                 message: message,
             }, {
