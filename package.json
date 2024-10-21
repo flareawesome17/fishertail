@@ -1,8 +1,8 @@
 {
+  "homepage": "https://flareawesome17.github.io/fishertail",
   "name": "gps-fishertail",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://flareawesome17.github.io/fishertail/",
   "dependencies": {
     "@arcgis/core": "^4.30.9",
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
