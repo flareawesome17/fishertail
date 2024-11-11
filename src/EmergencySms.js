@@ -131,7 +131,7 @@ const EmergencySms = ({ isOpen, onRequestClose }) => {
         console.log("SMS Message Body:", message);
     
         try {
-            const response = await axios.post('https://fishertail-sms-server.42web.io/', {
+            const response = await axios.post('http://localhost/php/index.php', {
                 phone: phone,
                 message: message,
             }, {

@@ -56,6 +56,13 @@ const FisherTail = ({user, logout}) => {
   const [smsIsOpen, setSmsIsOpen] = useState(false);
   const [emailIsOpen, setEmailIsOpen] = useState(false);
   const [history, setHistory] = useState([]); // Initialize as an empty array
+  
+  const [cityFisherfolk, setCityFisherfolk] = useState('');
+  const [fishingType, setFishingType] = useState('');
+  const [homeport, setHomeport] = useState('');
+  const [contactNumber, setContactNumber] = useState('');
+  const [fishingboatName, setFishingboatName] = useState('');
+
 
   
 
@@ -78,8 +85,12 @@ const FisherTail = ({user, logout}) => {
               speed: selectedDeviceData.speed || 0,
               lastUpdated: selectedDeviceData.timestamp || Date.now(),
               user: selectedDeviceData.userName || 'Unknown',
-              deviceID: selectedDeviceData.deviceId || '',
+              deviceID: selectedDeviceData.deviceId || '',  // Correct field name
               address: selectedDeviceData.address || '',
+              fishingType: selectedDeviceData.fishingType || '',
+              fishingboatName: selectedDeviceData.fishingboatName || '',  // Correct field name
+              homeport: selectedDeviceData.homeport || '',
+              contactNumber: selectedDeviceData.contactNumber || '',
               history: selectedDeviceData.history ? Object.values(selectedDeviceData.history) : [] // Ensure history is fetched
             };
             setLocation(newLocation);
@@ -416,6 +427,11 @@ const FisherTail = ({user, logout}) => {
         deviceId: deviceID,
         userName: userName,
         address: address,
+        fishingType: fishingType,
+        cityFisherfolk: cityFisherfolk,
+        homeport: homeport,
+        contactNumber: contactNumber,
+        fishingboatName: fishingboatName,
         timestamp: 0,
         latitude: 0,
         longitude: 0,
@@ -585,8 +601,12 @@ const handleDelete = async (deviceId) => {
         <div className="device-details-box">
           <h3>Vessel Owner</h3>
           <p>User's Name: {location.user}</p>
-          <p>Device ID: {location.deviceID}</p>
+          <p>Registration No: {location.deviceID}</p>
           <p>Address: {location.address}</p>
+          <p>Fishing Type: {location.fishingType}</p>
+          <p>fishingboatName: {location.fishingboatName}</p>
+          <p>Homport: {location.homeport}</p>
+          <p>Contact Number: {location.homeport}</p>
         </div>
 
         <div className="location-history" id="printable-history">
@@ -662,7 +682,7 @@ const handleDelete = async (deviceId) => {
         <h2>Add Device</h2>
         <form onSubmit={handleSubmit}>
           <label>
-            Registration ID:
+            Registration No:
             <input
               type="text"
               value={deviceID}
@@ -680,6 +700,15 @@ const handleDelete = async (deviceId) => {
             />
           </label>
           <label>
+            Name of City Fisherfolk:
+            <input
+              type="text"
+              value={cityFisherfolk}
+              onChange={(e) => setCityFisherfolk(e.target.value)}
+              required
+            />
+          </label>
+          <label>
             Address:
             <input
               type="text"
@@ -688,10 +717,47 @@ const handleDelete = async (deviceId) => {
               required
             />
           </label>
+          <label>
+            Type of Fishing:
+            <input
+              type="text"
+              value={fishingType}
+              onChange={(e) => setFishingType(e.target.value)}
+              required
+            />
+          </label>
+          <label>
+            Homeport:
+            <input
+              type="text"
+              value={homeport}
+              onChange={(e) => setHomeport(e.target.value)}
+              required
+            />
+          </label>
+          <label>
+            Contact Number:
+            <input
+              type="text"
+              value={contactNumber}
+              onChange={(e) => setContactNumber(e.target.value)}
+              required
+            />
+          </label>
+          <label>
+            Name of Fishingboat:
+            <input
+              type="text"
+              value={fishingboatName}
+              onChange={(e) => setFishingboatName(e.target.value)}
+              required
+            />
+          </label>
           <button type="submit">Add Device</button>
           <button type="button" onClick={closeModal}>Close</button>
         </form>
       </Modal>
+
 
       {/* Settings */}
       {modalSettings && (
