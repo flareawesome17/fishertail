@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/fishertail/static/css/main.e0f93f45.css",
-    "main.js": "/fishertail/static/js/main.b9e7841f.js",
+    "main.css": "/fishertail/static/css/main.768359c3.css",
+    "main.js": "/fishertail/static/js/main.3ab3e5ad.js",
     "static/media/compass.png": "/fishertail/static/media/compass.3eb804ea274111d40926.png",
     "static/media/fishertail_logo.jpeg": "/fishertail/static/media/fishertail_logo.49bd7cd2177986442fcb.jpeg",
     "index.html": "/fishertail/index.html",
-    "main.e0f93f45.css.map": "/fishertail/static/css/main.e0f93f45.css.map",
-    "main.b9e7841f.js.map": "/fishertail/static/js/main.b9e7841f.js.map"
+    "main.768359c3.css.map": "/fishertail/static/css/main.768359c3.css.map",
+    "main.3ab3e5ad.js.map": "/fishertail/static/js/main.3ab3e5ad.js.map"
   },
   "entrypoints": [
-    "static/css/main.e0f93f45.css",
-    "static/js/main.b9e7841f.js"
+    "static/css/main.768359c3.css",
+    "static/js/main.3ab3e5ad.js"
   ]
 }
